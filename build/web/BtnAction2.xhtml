@@ -3,10 +3,66 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Facelet Title</title>
+       <style>
+
+
+             body{
+                 background-image: Url("library/image/book7.jpg");
+                 background-size: 100%;
+            }
+            .labels{
+               display: flex;
+                margin: 20px;
+                 margin-left: 500px;
+                padding: 10px;
+            }
+              .fields{
+              margin-top: 23px;
+               width: 100px;
+               height: 20px;
+               position: fixed;
+               left: 620px;
+            }
+            .alldiv{
+                display: flex;
+                
+                
+                
+            }
+            .btn-sabmit{
+                 display: flex;
+                margin: 20px;
+                 margin-left: 500px;
+                padding: 10px;
+            }
+       </style>  
     </h:head>
     <h:body>
-        User_Login Information
+        <h:form id="form">
+            
+            <div class="alldiv">                
+            <label class="labels">First Name</label>
+            <h:inputText id="firstname" class="fields"/>
+            </div>
+            
+            <div class="alldiv">
+            <label class="labels">Last Name</label>
+            <h:inputText id="laststname" class="fields"/>
+            </div>
+            
+            <div class="alldiv">
+                <label class="labels" id="lab">Email</label>
+            <h:inputText id="email" class="fields"/>
+             </div>
+            
+            <div class="alldiv">
+            <label class="labels">Password</label>
+             <h:inputSecret id="epassword" class="fields"/>
+             </div>
+            <div class="alldiv">
+            <h:commandButton value="Sabmit" action="BtnAction" class="btn-sabmit"></h:commandButton>
+            </div>
+                   </h:form>
     </h:body>
 </html>
 

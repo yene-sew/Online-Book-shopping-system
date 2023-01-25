@@ -12,7 +12,7 @@
             }
             .labels{
                display: flex;
-                margin: 20px;
+                margin: 10px;
                  margin-left: 500px;
                 padding: 10px;
             }
@@ -25,43 +25,48 @@
             }
             .alldiv{
                 display: flex;
-                
-                
-                
             }
-            .btn-sabmit{
+            .signup-btn{
                  display: flex;
-                margin: 20px;
-                 margin-left: 500px;
-                padding: 10px;
+                margin: 15px;
+                 margin-left: 560px;
+                padding: 5px;
             }
+
        </style>  
     </h:head>
     <h:body>
         <h:form id="form">
             
             <div class="alldiv">                
-            <label class="labels">First Name</label>
+            <label class="labels">First Name-</label>
             <h:inputText id="firstname" class="fields"/>
             </div>
             
             <div class="alldiv">
-            <label class="labels">Last Name</label>
+            <label class="labels">Last Name-</label>
             <h:inputText id="laststname" class="fields"/>
             </div>
             
-            <div class="alldiv">
-                <label class="labels" id="lab">Email</label>
-            <h:inputText id="email" class="fields"/>
+             <div class="alldiv">
+                <label class="labels" id="lab">Phone-num-</label>
+            <h:inputText id="phone" class="fields"/>
              </div>
             
             <div class="alldiv">
-            <label class="labels">Password</label>
+                <label class="labels" id="lab">Email-</label>
+            <h:inputText id="email" class="fields"/>
+             </div>
+            
+            
+            <div class="alldiv">
+            <label class="labels">Password-</label>
              <h:inputSecret id="epassword" class="fields"/>
              </div>
-            <div class="alldiv">
-            <h:commandButton value="Sabmit" action="Order_Class" class="btn-sabmit"></h:commandButton>
-            </div>
+                     
+            <h:commandButton value="Sign-Up" action="Log_in" class="signup-btn"></h:commandButton>
+            
+            
                    </h:form>
     </h:body>
 </html>

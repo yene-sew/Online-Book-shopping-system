@@ -13,7 +13,7 @@
                display: flex;
                 margin: 20px;
                  margin-left: 500px;
-                padding: 10px;
+                padding: 3px;
             }
               .fields{
               margin-top: 23px;
@@ -23,9 +23,7 @@
                left: 620px;
             }
             .order{
-                display: flex;
-                
-                
+                display: flex;     
                 
             }
             .btn-buy{
@@ -61,6 +59,17 @@
             <label class="labels">Quantity</label>
              <h:inputText id="quantity" class="fields"/>
              </div>
+             
+             <div class="order">
+            <label class="labels">Name</label>
+             <h:inputText id="name" class="fields"/>
+             </div>
+             
+                          <div class="order">
+            <label class="labels">LastName</label>
+             <h:inputText id="lastname" class="fields"/>
+             </div>
+             
              <div class="order">
             <h:commandButton value="Buy" action="BtnAction" class="btn-buy"></h:commandButton>
             </div>

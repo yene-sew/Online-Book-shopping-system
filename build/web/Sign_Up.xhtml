@@ -40,31 +40,35 @@
             
             <div class="alldiv">                
             <label class="labels">First Name-</label>
-            <h:inputText id="firstname" class="fields"/>
+            <h:inputText id="firstname" value="#{signUp.firstname}" class="fields"/>
             </div>
             
             <div class="alldiv">
             <label class="labels">Last Name-</label>
-            <h:inputText id="laststname" class="fields"/>
+            <h:inputText id="laststname" value="#{signUp.lastname}" class="fields"/>
             </div>
             
              <div class="alldiv">
                 <label class="labels" id="lab">Phone-num-</label>
-            <h:inputText id="phone" class="fields"/>
+                <h:inputText id="phone" value="#{signUp.phone}" class="fields"/>
              </div>
             
             <div class="alldiv">
                 <label class="labels" id="lab">Email-</label>
-            <h:inputText id="email" class="fields"/>
+                <h:inputText id="email" value="#{signUp.email}" class="fields"/>
              </div>
             
+             <div class="alldiv">
+                <label class="labels" id="lab">User-Name-</label>
+                <h:inputText id="user" value="#{signUp.username}" class="fields"/>
+             </div>
             
             <div class="alldiv">
             <label class="labels">Password-</label>
-             <h:inputSecret id="epassword" class="fields"/>
+            <h:inputSecret id="epassword" value="#{signUp.password}" class="fields"/>
              </div>
                      
-            <h:commandButton value="Sign-Up" action="Log_in" class="signup-btn"></h:commandButton>
+            <h:commandButton value="Sign-Up" action="#{signUp.Insert}" class="signup-btn"></h:commandButton>
             
             
                    </h:form>

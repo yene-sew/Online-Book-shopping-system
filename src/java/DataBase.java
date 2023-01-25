@@ -8,7 +8,7 @@ public class DataBase {
   private static final String USERNAME = "JAVA2021"; 
   private static final String PASSWORD = "1616";  
   
-  public Connection conn_method()
+  public Connection connMethod()
   {
       Connection connection = null;
       try{
@@ -26,7 +26,7 @@ public class DataBase {
   }
   public static void main(String []args){
       DataBase obj = new DataBase();
-       System.out.println(obj.conn_method());
+       System.out.println(obj.connMethod());
 
   }
 }

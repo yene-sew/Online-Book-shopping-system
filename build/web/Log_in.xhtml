@@ -24,16 +24,12 @@
                         margin-left: 110px;
                         margin-top: 60px;
                     }
-                     .btn1{
+                     .login-btn{
                         position: fixed;
                         margin-left: 110px;
                         margin-top: 100px;
                     }
-                      .btn2{
-                        position: fixed;
-                        margin-left: 110px;
-                        margin-top: 110px;
-                    }
+
                     
              body{
                  background-image: Url("library/image/book6.jpg");
@@ -44,14 +40,13 @@
     </h:head>
     <h:body>
         <h:form id="form">
-                <label class="user">Email:</label>
-                <h:inputText id="email" class="user1"/><br/>
+                <label class="user">User-Name:</label>
+                <h:inputText id="email" value="#{login.user}" class="user1"/><br/>
                 
                 <label class="key">Pass-Key:</label>
-                <h:inputText id="passkey" class="key1"/><br/> 
+                <h:inputText id="passkey" value="#{login.pass}" class="key1"/><br/> 
                 
-                <h:commandButton class="btn1" value="User-Login" action="Order_Class" ></h:commandButton><br/>
-                <h:commandButton class="btn2" value="Admin-Login" action="index"></h:commandButton>
+                <h:commandButton class="login-btn"  value="Login" action="#{login.checkuser()}"></h:commandButton>
 
         </h:form>
     </h:body>

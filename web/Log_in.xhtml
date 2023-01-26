@@ -6,28 +6,45 @@
                 <style>
                     .user{
                         position: fixed;
-                        margin-left: 30px;
-                        margin-top: 50px;
+                        margin-left: 350px;
+                        height: 30px;
+                        width: 100px;
+                        margin-top: 250px;
                     }
-                                        .user1{
+                    .user1{
                         position: fixed;
-                        margin-left: 110px;
-                        margin-top: 50px;
+                        margin-left: 430px;
+                        height: 20px;
+                        width: 100px;
+                        margin-top: 250px;
                     }
                     .key{
                         position: fixed;
-                        margin-left: 30px;
-                        margin-top: 60px;
+                        margin-left: 350px;
+                        height: 30px;
+                        width: 100px;
+                        margin-top: 270px;
                     }  
                     .key1{
                         position: fixed;
-                        margin-left: 110px;
-                        margin-top: 60px;
+                        margin-left: 430px;
+                        height: 20px;
+                        width: 100px;
+                        margin-top: 270px;
                     }
                      .login-btn{
                         position: fixed;
-                        margin-left: 110px;
-                        margin-top: 100px;
+                        margin-left: 410px;
+                        height: 25px;
+                        width: 75px;
+                        margin-top: 300px;
+                    }
+                      .log{
+                        position: fixed;
+                        margin-left: 385px;
+                        height: 25px;
+                        width: 125px;
+                        margin-top: 330px;
                     }
 
                     
@@ -47,7 +64,8 @@
                 <h:inputText id="passkey" value="#{login.pass}" class="key1"/><br/> 
                 
                 <h:commandButton class="login-btn"  value="Login" action="#{login.checkuser()}"></h:commandButton>
-
+                <h:commandButton class="log" value="Create Account"   action="Sign_Up" ></h:commandButton>
+            
         </h:form>
     </h:body>
 </html>

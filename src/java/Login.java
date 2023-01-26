@@ -50,7 +50,7 @@ public class Login {
             String userType =rs.getString(1);
 
             if ("Admin".equals(userType)) {
-                return "index";
+                return "Admin_Page";
             } else {
                 return "Order_Class";
             }

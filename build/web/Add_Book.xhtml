@@ -5,18 +5,19 @@
     <h:head>
                <style>
 
-   body{
-                 background-image: Url("library/image/book1.jpg");
-                 background-size: 100%;
-            }
+            .admin{
+                
+                margin-left: 510px;
+                margin-top: 30px;
+                    }
+            
             .labels{
+                margin-top: 25px;
                display: flex;
-                margin: 20px;
                  margin-left: 500px;
-                padding: 3px;
             }
               .fields{
-              margin-top: 23px;
+              margin-top: 25px;
                width: 100px;
                height: 20px;
                position: fixed;
@@ -24,55 +25,62 @@
             }
             .order{
                 display: flex;     
+              
                 
+            }
+            .add{
+                margin-top: 35px;
             }
             .btn-buy{
                  display: flex;
                 margin: 20px;
-                 margin-left: 500px;
+                width:60px;
+                 margin-left: 530px;
                 padding: 10px;
             }
-       </style>    </h:head>
+       </style>   
+    </h:head>
     <h:body>
+        <div>
+                 
+                                <h2 class="admin">Add Book</h2>
+
+             </div>
+
          <h:form id="form">
-            
-            <div class="order">                
-            <h1 class="labels">Add your information</h1>
-            </div>
              
+               <div class="add">  
              <div class="order">                
-            <label class="labels">Genre</label>
-            <h:inputText id="genre" class="fields"/>
+            <label class="labels">Book Name</label>
+            <h:inputText id="genre" value="#{insert_Book.book}" class="fields"/>
             </div>
             
             <div class="order">
-            <label class="labels">Writer</label>
-            <h:inputText id="writer" class="fields"/>
+            <label class="labels">author Name</label>
+            <h:inputText id="writer" value="#{insert_Book.author}" class="fields"/>
             </div>
             
             <div class="order">
-                <label class="labels" id="lab">Book title</label>
-            <h:inputText id="title" class="fields"/>
+                <label class="labels" id="lab">Price</label>
+            <h:inputText id="title" value="#{insert_Book.price}" class="fields"/>
              </div>
             
             <div class="order">
-            <label class="labels">Quantity</label>
-             <h:inputText id="quantity" class="fields"/>
+            <label class="labels">Category</label>
+             <h:inputText id="quantity" value="#{insert_Book.category}" class="fields"/>
              </div>
              
              <div class="order">
-            <label class="labels">Name</label>
+            <label class="labels">Upload Photo</label>
              <h:inputText id="name" class="fields"/>
              </div>
              
-                          <div class="order">
-            <label class="labels">LastName</label>
-             <h:inputText id="lastname" class="fields"/>
-             </div>
+
              
              <div class="order">
-            <h:commandButton value="Buy" action="BtnAction" class="btn-buy"></h:commandButton>
+            <h:commandButton value="Add" action="#{insert_Book.addbook}" class="btn-buy"></h:commandButton>
             </div>
+                   </div>
                    </h:form>
     </h:body>
 </html>

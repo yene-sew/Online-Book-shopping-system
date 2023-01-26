@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+                <style>
+
+
+                     .btn1{
+                        position: fixed;
+                        margin-left: 435px;
+                        margin-top: 300px;
+                        height: 32px;
+                        width: 80px;
+                    }
+                     .btn2{
+                        position: fixed;
+                        margin-left: 535px;
+                        margin-top: 300px;
+                        height: 32px;
+                        width: 77px;
+                    }
+                     .btn3{
+                        position: fixed;
+                        margin-left: 635px;
+                        height: 32px;
+                        width: 75px;
+                        margin-top: 300px;
+                    }
+                     .admin{
+                        position: fixed;
+                        margin-left: 500px;
+                        margin-top: 200px;
+                    }
+                    
+             body{
+                 background-image: Url("library/image/book5.jpg");
+                 background-size: 100%;
+            }
+           </style>
+
+    </h:head>
+    <h:body>
+        <h:form id="form">
+                <h1 class="admin">Hello Admin</h1>
+               
+                
+                <h:commandButton class="btn1"  value="Add Books" action="Add_Book"></h:commandButton>
+                <h:commandButton class="btn2"  value="All Books"></h:commandButton>
+                <h:commandButton class="btn3"  value="Logout"></h:commandButton>
+
+
+        </h:form>
+    </h:body>
+</html>
+

@@ -5,28 +5,26 @@
     <h:head>
                 <style>
 
-
-                     .btn1{
-                        position: fixed;
-                        margin-left: 435px;
-                        margin-top: 300px;
-                        height: 32px;
-                        width: 80px;
+                    .btn{
+                        background: #ffffff;
+                        overflow:hidden;
+                        width: 400px;
+                        
                     }
-                     .btn2{
-                        position: fixed;
-                        margin-left: 535px;
-                        margin-top: 300px;
-                        height: 32px;
-                        width: 77px;
+                    .btn a{
+                        color: #000000;
+                        font-size: 15px;
+                        float: left;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        font-family: sans-serif;
                     }
-                     .btn3{
-                        position: fixed;
-                        margin-left: 635px;
-                        height: 32px;
-                        width: 75px;
-                        margin-top: 300px;
+                    .btn a:hover{
+                        color:#33ffcc;
                     }
+                    
+                    
                      .admin{
                         position: fixed;
                         margin-left: 500px;
@@ -42,12 +40,18 @@
     </h:head>
     <h:body>
         <h:form id="form">
-                <h1 class="admin">Hello Admin</h1>
-               
+            <div class="admin">
+                          <h1 >Hello Admin</h1>
+                </div>
+                <div class="btn">  
+                    
+                    <a href="Add_Book.xhtml"> ADD BOOK</a>
+                    <a href="Display_Page.xhtml"> ALL BOOK</a>
+                    <a href="index"> LOG OUT</a>
+
                 
-                <h:commandButton class="btn1"  value="Add Books" action="Add_Book"></h:commandButton>
-                <h:commandButton class="btn2"  value="All Books" action="Display_Page" ></h:commandButton>
-                <h:commandButton class="btn3"  value="Logout"></h:commandButton>
+                </div>
+
 
 
         </h:form>

@@ -43,6 +43,7 @@ public class Login {
         if (valid) {
               DataBase dbcon = new DataBase();
             Connection con = dbcon.connMethod();
+            
             PreparedStatement ps = con.prepareStatement("select USERTYP from LOGINTBL where USERNAME=?");
             ps.setString(1, User);       
             ResultSet rs = ps.executeQuery();

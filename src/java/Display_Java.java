@@ -4,9 +4,13 @@ public class Display_Java {
         private String author;
         private String price;
         private String category;
+        private String bookid;
         
     public String getBook() {
         return book;
+    }
+      public String getBookid() {
+        return bookid;
     }
    
 
@@ -27,13 +31,12 @@ public class Display_Java {
     
 
 
-public Display_Java(String book,String author,String price,String category){
+public Display_Java(String book,String author,String price,String category,String bookid){
     this.book=book;
-        this.author=author;
-
-                this.price=price;
-
-                    this.category=category;
+    this.author=author;
+    this.price=price;
+    this.category=category;
+    this.bookid=bookid;
 
 }
 }

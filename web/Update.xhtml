@@ -51,33 +51,36 @@
                <div class="add">  
              <div class="order">                
             <label class="labels">Book Name</label>
-            <h:inputText id="genre" value="#{editeBookk.book}" class="fields"/>
+            <h:inputText id="genre" value="#{update_Class.book}" class="fields"/>
             </div>
             
             <div class="order">
             <label class="labels">author Name</label>
-            <h:inputText id="writer" value="#{editeBookk.author}" class="fields"/>
+            <h:inputText id="writer" value="#{update_Class.author}" class="fields"/>
             </div>
             
             <div class="order">
                 <label class="labels" id="lab">Price</label>
-            <h:inputText id="title" value="#{editeBookk.price}" class="fields"/>
+            <h:inputText id="title" value="#{update_Class.price}" class="fields"/>
              </div>
             
             <div class="order">
             <label class="labels">Category</label>
-             <h:inputText id="quantity" value="#{editeBookk.category}" class="fields"/>
+             <h:inputText id="quantity" value="#{update_Class.category}" class="fields"/>
+             </div>
+                   
+                         <div class="order">
+            <label class="labels">Bookid</label>
+             <h:inputText id="bid" value="#{update_Class.bookid}" class="fields"/>
              </div>
              
              <div class="order">
             <label class="labels">Upload Photo</label>
              <h:inputText id="name" class="fields"/>
-             </div>
-             
-
+             </div>             
              
              <div class="order">
-            <h:commandButton value="Update" action="#{display_Java.Update(editBookk)}" class="btn-buy"></h:commandButton>
+            <h:commandButton value="Update" action="#{update_Class.upDateMethod()}" class="btn-buy"></h:commandButton>
             </div>
                    </div>
                    </h:form>

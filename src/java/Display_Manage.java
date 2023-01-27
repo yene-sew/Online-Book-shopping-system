@@ -26,8 +26,10 @@ public class Display_Manage {
                String var2=rs.getString("AUTHORNAME");
                String var3=rs.getString("PRICE");
                String var4=rs.getString("CATEGORY");
+               String var5=rs.getString("BOOKID");
+
                
-               list.add(new Display_Java(var1,var2,var3,var4));
+               list.add(new Display_Java(var1,var2,var3,var4,var5));
 
            }
        }

@@ -13,6 +13,9 @@
 
             body{
                 margin: 0;
+                 
+                 background-image: Url("library/image/book4.jpg");
+                 background-size: 100%;
             }
             .heade
             {
@@ -32,6 +35,18 @@
                 height: 500px;
                   
             }
+            .owwe{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            .ewwo{
+                display: flex;
+                flex-basis: 50%;
+                margin-top: 100px;
+                margin-left: 50px;
+                flex-direction: column;
+            }
         </style>
     </h:head>
     <h:body>
@@ -41,14 +56,32 @@
          
             <div class="Button">
                 <h:commandButton value="Login" id="login_button"  action="Log_in"></h:commandButton>
-            </div>  
-            
-            
-            
+            </div> 
         </div>
-        <div>
-            <img class="photo" src="library/image/book4.jpg" alt="alt"/>
-        </div>
+            <div class="owwe">
+                <DIV class="ewwo">
+              <h1>
+                ONLINE BOOK STORE
+            </h1>
+            <h2>
+                Hello!!
+                what you want to do on this website?
+                There is a lot of option are included in this website for your satisfaction.
+                If you want to buy a book or to read online
+                Enjoy your time by reading Books.
+
+            </h2>
+               
+            </DIV>
+            <div>
+                <a>Well Come
+                please Enter one of the button</a>
+            </div>
+            
+            </div>
+            
+        
+       
         </h:form>
     </h:body>
 </html>

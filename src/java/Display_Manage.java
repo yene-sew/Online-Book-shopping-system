@@ -35,5 +35,7 @@ public class Display_Manage {
            
        }
        return list;
+       
    }
+   
 }

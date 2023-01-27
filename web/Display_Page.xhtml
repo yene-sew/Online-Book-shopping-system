@@ -8,9 +8,9 @@
         <style>
             .display{
                 position: fixed;
-               width: 25%;
+               width: 30%;
                top: 150px;
-               left: 400px;
+               left: 500px;
                margin: auto;
                border-style: solid;
                border-color: white;
@@ -30,29 +30,32 @@
                 
                     
         <h2>Data Table for Books</h2>
-        <h:dataTable id="admin"  columnClasses="columns" value="#{display_Manage.getlist()}" var="class"> 
+        <h:dataTable id="admin"  columnClasses="columns" value="#{display_Manage.getlist()}" var="cla"> 
         
         <h:column>  
             <div class="display"> 
                 
         <f:facet  id="books"  name="header">BOOK</f:facet>   </div>
-        <h:outputText value="#{class.book}"/>
+        <h:outputText value="#{cla.book}"/>
         </h:column>
         
            <h:column>   
         <f:facet name="header">AUTHOR</f:facet>
-        <h:outputText value="#{class.author}"/>
+        <h:outputText value="#{cla.author}"/>
         </h:column>
         
            <h:column>   
         <f:facet name="header">PRICE</f:facet>
-        <h:outputText value="#{class.price}"/>
+        <h:outputText value="#{cla.price}"/>
            </h:column>
         
            <h:column>   
         <f:facet name="header">CATEGORY</f:facet>
-        <h:outputText value="#{class.category}"/>
+        <h:outputText value="#{cla.category}"/>
            </h:column>
+            
+       
+
             
         </h:dataTable>
                        

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+               <style>
+
+            .admin{
+                
+                margin-left: 510px;
+                margin-top: 70px;
+                    }
+            
+            .labels{
+                margin-top: 25px;
+               display: flex;
+                 margin-left: 500px;
+            }
+              .fields{
+              margin-top: 25px;
+               width: 100px;
+               height: 20px;
+               position: fixed;
+               left: 620px;
+            }
+            .order{
+                display: flex;     
+              
+                
+            }
+            .add{
+                margin-top: 35px;
+                position: fixed;
+            }
+            .btn-buy{
+                 display: flex;
+                margin: 20px;
+                width:60px;
+                 margin-left: 530px;
+                padding: 10px;
+            }
+       </style>   
+    </h:head>
+    <h:body>
+        <ui:include src="Admin_Page.xhtml"/>
+      
+
+         <h:form >
+             
+               <div class="add">  
+             <div class="order">                
+            <label class="labels">Book Name</label>
+            <h:inputText id="genre" value="#{editeBookk.book}" class="fields"/>
+            </div>
+            
+            <div class="order">
+            <label class="labels">author Name</label>
+            <h:inputText id="writer" value="#{editeBookk.author}" class="fields"/>
+            </div>
+            
+            <div class="order">
+                <label class="labels" id="lab">Price</label>
+            <h:inputText id="title" value="#{editeBookk.price}" class="fields"/>
+             </div>
+            
+            <div class="order">
+            <label class="labels">Category</label>
+             <h:inputText id="quantity" value="#{editeBookk.category}" class="fields"/>
+             </div>
+             
+             <div class="order">
+            <label class="labels">Upload Photo</label>
+             <h:inputText id="name" class="fields"/>
+             </div>
+             
+
+             
+             <div class="order">
+            <h:commandButton value="Update" action="#{display_Java.Update(editBookk)}" class="btn-buy"></h:commandButton>
+            </div>
+                   </div>
+                   </h:form>
+    </h:body>
+</html>
+

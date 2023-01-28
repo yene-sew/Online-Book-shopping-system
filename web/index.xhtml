@@ -29,6 +29,7 @@
                 display: flex;
                 flex-basis: 85%;
                 color: white;
+                margin-left: 90px;
             }
 
             .photo{
@@ -41,10 +42,13 @@
                 flex-direction: row;
                 
             }
-            .half{
-                margin-left: 50px;
-                margin-top: 100px;
+          
+            .first{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
             }
+             
             .ewwo{
                 display: flex;
                 flex-basis: 45%;
@@ -52,19 +56,70 @@
                 margin-left: 50px;
                 flex-direction: column;
             }
+            .btn{
+                margin-top: 20px;
+                margin-left: 10px;
+                width: 100px;
+                height:100px;
+                
+            background: #ffffff;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: .4s;
+            
+        }
+        .log2{
+               position: fixed;
+               width: 60px;
+               height: 60px;
+              left: 1px;
+              top: 10px;
+               border-radius: 100px;
+        }
+            
+        btn:hover{
+            background: transparent;
+            border: 20px solid #f9004d;
+            cursor: pointer;
+        
+                
+            }
+            .allbtn{
+                width: 55%;
+            }
+            #div1{
+                margin-top:120px;
+            }
+            #left{
+                margin-left: 130px;
+                
+            }
+             #left2{
+                margin-left: 250px;
+                
+            }
+            #right{
+                margin-right: 130px;
+            }
+            
         </style>
     </h:head>
     <h:body>
         <h:form>
         <div class="heade">
-            <h1 class="title">EBOOK_YENESEW</h1>
+            <h1 class="title">EBOOK_YENESEW </h1>
+            <img class="log2" src="library/image/iconbook.jfif" alt="alt"/>
          
             <div class="Button">
                 <h:commandButton value="Login" id="login_button"  action="Log_in"></h:commandButton>
             </div> 
         </div>
             <div class="owwe">
-                <DIV class="ewwo">
+                <div class="ewwo">
               <h1>
                 ONLINE BOOK STORE
             </h1>
@@ -78,11 +133,30 @@
 
             </h2>
                
-            </DIV>
-            <div class='half'>
-                <a>Well Come
-                please Enter one of the button</a>
             </div>
+             
+                
+                <div class="allbtn">                                             
+                <div class="first" id="div1">    
+                               <div id="left" class="btn">                    
+                                   <h:commandButton   value="BOOKS" action="BookPage.xhtml" class="anchor1"><img src="library/image/books.jfif" height ="80" width="100"/></h:commandButton>
+                           </div>
+
+                              <div id="right" class="btn">                     
+             <h:commandButton value="HELP" action="Help.xhtml" class="anchor2"><img src="library/image/help.png" height ="80" width="100"/></h:commandButton>
+                               </div>
+                </div>
+                
+                <div class="first">
+                               <div id="left2" class="btn">                                   
+              <h:commandButton value="CONTACT" action="Contact.xhtml" class="anchor3"><img src="library/image/contact.jfif" height ="80" width="100"/></h:commandButton>
+                                </div>
+                
+                                
+                </div>
+        </div>
+                
+                
             
             </div>
             

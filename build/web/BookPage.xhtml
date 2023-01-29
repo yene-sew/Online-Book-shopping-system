@@ -1,12 +1,235 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Facelet Title</title>
+        <title>Java@YENE</title>
+        <style>
+            .Button{
+                width: 100px;
+                height: 30px;
+                display: flex;
+                
+                margin-top: 40px;  
+            }
+
+            body{
+                margin: 0;
+                 
+                 background-image: Url("library/image/book4.jpg");
+                 background-size: 100%;
+            }
+            .heade
+            {
+             background-color: #06114F;   
+             display: flex;
+             flex-direction: row;
+             justify-content: center;
+
+            }
+            .title{
+                display: flex;
+                flex-basis: 85%;
+                color: white;
+                margin-left: 90px;
+            }
+
+            .photo{
+                width: 100%;
+                height: 500px;
+                  
+            }
+    
+          
+            .first{
+                display: flex;
+                margin-top: 70px;
+            }
+             
+        
+            .btn{
+                margin-top: 20px;
+                margin-left: 40px;
+                width: 90px;
+                height:110px;
+                
+            background: #311415;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: .4s;
+            
+        }
+        .log2{
+               position: fixed;
+               width: 60px;
+               height: 60px;
+              left: 1px;
+              top: 10px;
+               border-radius: 100px;
+        }
+            
+        btn:hover{
+            background: transparent;
+            border: 20px solid #f9004d;
+            cursor: pointer;
+        
+                
+            }
+            .allbtn{
+                width: 55%;
+            }
+            #div1{
+                margin-top:40px;
+            }
+
+            
+            #left{
+                margin-left: 125px;
+                
+            }
+
+            #right{
+                margin-left: 125px;
+            }
+            
+        </style>
     </h:head>
     <h:body>
-        Page for Display All Available books
+        <h:form>
+        <div class="heade">
+            <h1 class="title">Ethio-Books </h1>
+            <img class="log2" src="library/image/iconbook.jfif" alt="alt"/>
+         
+            <div class="Button">
+                <h:commandButton value="Home" id="login_button"  action="index"></h:commandButton>
+            </div> 
+        </div>
+            <div class="owwe">
+          
+             
+                
+                <div class="allbtn">                                             
+                <div class="first" id="div1">    
+                               <div id="left" class="btn"> 
+                                   <img src="library/image/bible.png" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor1"></h:commandButton>
+    <h:outputText value="BK01"/>
+                               </div>
+                                                   <div id="left" class="btn"> 
+                                                       <img src="library/image/fkr.jpg" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor1"></h:commandButton>
+                           <h:outputText value="BK02"/>
+                                                   </div>
+                                                    <div id="left" class="btn">
+                                                        <img src="library/image/kiburdingay.jpg" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor1"></h:commandButton>
+                           <h:outputText value="BK03"/>
+                                                    </div>                   
+
+                              <div id="right" class="btn">  
+                                  <img src="library/image/alenga.jfif" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor2"></h:commandButton>
+                              <h:outputText value="BK04"/> 
+                              </div>
+                                                 
+                </div>
+                
+                <div class="first">
+                    
+                               <div id="left" class="btn">  
+                                   <img src="library/image/andromeda.jpg" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
+                               <h:outputText value="BK11"/> 
+                               </div>
+                    
+                                <div id="left" class="btn">   
+                                    <img src="library/image/dertogada.png" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
+                                <h:outputText value="BK12"/>
+                                </div>
+                    
+                               <div id="right" class="btn">
+<img src="library/image/alemenor.jpg" height ="80" width="60"/>                                   
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
+                               <h:outputText value="BK13"/> 
+                               </div>
+                
+                                <div id="right" class="btn">
+                                    <img src="library/image/emegua.jpg" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
+                                <h:outputText value="BK14"/>
+                                </div>
+                                                   
+                </div>
+                    
+                 <div class="first" id="third">
+                    
+                               <div id="left" class="btn"> 
+                                   <img src="library/image/oromay.jfif" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
+                               <h:outputText value="BK21"/> 
+                               </div>
+                    
+                                <div id="left" class="btn">   
+                                    <img src="library/image/ramatohara.jfif" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
+                                <h:outputText value="BK22"/>
+                                </div>
+                    
+                               <div id="right" class="btn"> 
+                                   <img src="library/image/sememen.jpg" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
+                               <h:outputText value="BK23"/> 
+                               </div>
+                
+                                <div id="right" class="btn">  
+                                    <img src="library/image/yotor.jpg" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
+                                <h:outputText value="BK24"/>
+                                </div>
+                    
+                </div>  
+                    
+                                     <div class="first" id="third">
+                    
+                               <div id="left" class="btn">  
+                                   <img src="library/image/kiburdingay.jpg" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
+                               <h:outputText value="BK31"/> 
+                               </div>
+                    
+                                <div id="left" class="btn"> 
+                                    <img src="library/image/lelasew.jpg" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
+                                <h:outputText value="BK32"/>
+                                </div>
+                    
+                               <div id="right" class="btn">  
+                                   <img src="library/image/ogadendimetoch.jpg" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
+                               <h:outputText value="BK33"/> 
+                               </div>
+                
+                                <div id="right" class="btn">   
+                                    <img src="library/image/zigora.jfif" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
+                                <h:outputText value="BK34"/>
+                                </div>
+                    
+                </div> 
+                    
+                    
+        </div>
+                
+                
+            
+            </div>
+            
+        
+       
+        </h:form>
     </h:body>
 </html>
 

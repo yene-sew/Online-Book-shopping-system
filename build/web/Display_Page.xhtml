@@ -8,7 +8,7 @@
         <style>
             .display{
                 position: fixed;
-               width: 32%;
+               width: 31%;
                top: 150px;
                left: 500px;
                margin: auto;
@@ -17,6 +17,37 @@
                background-color: rgba(255,255,255,1);
             
             }
+                                      .Button{
+                width: 100px;
+                height: 30px;
+                display: flex;
+                margin-left:  1050px;
+                margin-top: 20px;
+                            background: #ffffff;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: .4s;
+            }
+            .td{
+                margin: 20px;
+                
+                padding: 10px;
+                background-color: lightgray;
+            }
+            .tit{
+                color: brown;
+            }
+             
+            display{
+                background-color:transparent ;
+                margin: 20px;
+                
+                padding: 10px;
+            }
 
         </style>
 
@@ -24,12 +55,15 @@
     <h:body>
         <ui:include src="Admin_Page.xhtml"/>
 <h:form>
-            
+                                                             <div class="Button">
+                            <img src="library/image/home.png" height ="50" width="65"/>
+                <h:commandButton style="background-color:#acb9b9;" value="Home" id="login_button"  action="Admin_Page"></h:commandButton>
+            </div>
             <div class="display">
                 
                 
                     
-        <h2>Data Table for Books</h2>
+        <h2 class="tit">Data Table for Books</h2>
         <h:dataTable id="admin"  columnClasses="columns" value="#{display_Manage.getlist()}" var="cla"> 
         
         <h:column>                  

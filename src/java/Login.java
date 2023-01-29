@@ -53,7 +53,7 @@ public class Login {
             if ("Admin".equals(userType)) {
                 return "Admin_Page";
             } else {
-                return "Order_Class";
+                return "BookPage";
             }
         } else {
             FacesContext.getCurrentInstance().addMessage(

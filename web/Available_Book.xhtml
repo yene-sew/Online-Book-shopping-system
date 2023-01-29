@@ -5,18 +5,7 @@
     <h:head>
        <style>
 
-
-             body{
-                 background-image: Url("library/image/book7.jpg");
-                 background-size: 100%;
-            }
-            .labels{
-               display: flex;
-                margin: 10px;
-                 margin-left: 500px;
-                padding: 10px;
-            }
-                            .Button{
+                .Button{
                 width: 100px;
                 height: 30px;
                 display: flex;
@@ -30,6 +19,16 @@
             padding: 13px 30px;
             border-radius: 30px;
             transition: .4s;
+            }
+             body{
+                 background-image: Url("library/image/book7.jpg");
+                 background-size: 100%;
+            }
+            .labels{
+               display: flex;
+                margin: 10px;
+                 margin-left: 500px;
+                padding: 10px;
             }
               .fields{
               margin-top: 23px;
@@ -53,42 +52,34 @@
     <h:body>
         <h:form id="form">
             
+                                             <div class="Button">
+                            <img src="library/image/home.png" height ="50" width="65"/>
+                <h:commandButton style="background-color:#acb9b9;" value="Home" id="login_button"  action="index"></h:commandButton>
+            </div>
             
             <div class="alldiv">                
-            <label class="labels">First Name-</label>
-            <h:inputText id="firstname" value="#{signUp.firstname}" class="fields"/>
+            <label class="labels">Book-Title-</label>
+            <h:inputText id="firstname" value="#{order.title}" class="fields"/>
             </div>
             
             <div class="alldiv">
-            <label class="labels">Last Name-</label>
-            <h:inputText id="laststname" value="#{signUp.lastname}" class="fields"/>
+            <label class="labels">Book-Id-</label>
+            <h:inputText id="laststname" value="#{order.id}" class="fields"/>
             </div>
             
-             <div class="alldiv">
-                <label class="labels" id="lab">Phone-num-</label>
-                <h:inputText id="phone" value="#{signUp.phone}" class="fields"/>
-             </div>
-            
-            <div class="alldiv">
-                <label class="labels" id="lab">Email-</label>
-                <h:inputText id="email" value="#{signUp.email}" class="fields"/>
-             </div>
             
              <div class="alldiv">
                 <label class="labels" id="lab">User-Name-</label>
-                <h:inputText id="user" value="#{signUp.username}" class="fields"/>
+                <h:inputText id="user" value="#{order.username}" class="fields"/>
              </div>
             
             <div class="alldiv">
             <label class="labels">Password-</label>
-            <h:inputSecret id="epassword" value="#{signUp.password}" class="fields"/>
+            <h:inputSecret id="epassword" value="#{order.password}" class="fields"/>
              </div>
                      
-            <h:commandButton value="Sign-Up" action="#{signUp.Insert}" class="signup-btn"></h:commandButton>
-                                 <div class="Button">
-                            <img src="library/image/home.png" height ="50" width="65"/>
-                <h:commandButton style="background-color:#acb9b9;" value="Home" id="login_button"  action="index"></h:commandButton>
-            </div>
+            <h:commandButton value="Order" action="#{order.Ordere}" class="signup-btn"></h:commandButton>
+            
             
                    </h:form>
     </h:body>

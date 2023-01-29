@@ -6,7 +6,21 @@
     <h:head>
         <style>
             
-       
+                                 .Button{
+                width: 100px;
+                height: 30px;
+                display: flex;
+                margin-left:  1050px;
+                margin-top: 20px;
+                            background: #ffffff;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: .4s;
+            }
                 .delete{
                 position: fixed;
                width: 32%;
@@ -16,7 +30,7 @@
                padding: 10px;
                border-style: solid;
                border-color: white;
-               background-color: rgba(255,255,255,0.9);
+               background-color: #99987d;
             
             } 
              </style>
@@ -25,6 +39,10 @@
         <ui:include src="Admin_Page.xhtml"/>
 
         <h:form>
+                                                 <div class="Button">
+                            <img src="library/image/home.png" height ="50" width="65"/>
+                <h:commandButton style="background-color:#acb9b9;" value="Home" id="login_button"  action="Admin_Page"></h:commandButton>
+            </div>
             <div class="delete">
               <div class="text_label">
                    <h3 class="title">Delete Books using Book Id.</h3>
@@ -32,7 +50,7 @@
                      <h:inputText id="date" class="conntrol-textfield" value="#{delete_Class.bookid}" />
                   </div>
                <div>
-                       <h:commandButton class="btn-control" id="add" value="DELETE" action="#{delete_Class.DeleteBook()}"/>
+                       <h:commandButton style="background-color:#ff0000;" class="btn-control" id="add" value="DELETE" action="#{delete_Class.DeleteBook()}"/>
                    </div>
             </div>
             </h:form>

@@ -6,7 +6,20 @@
     <h:head>
         <style>
             
-                                 .Button{
+       
+                .delete{
+                position: fixed;
+               width: 32%;
+               top: 150px;
+               left: 500px;
+               margin: auto;
+               padding: 10px;
+               border-style: solid;
+               border-color: white;
+               background-color: #99987d;
+            
+            } 
+                                                         .Button{
                 width: 100px;
                 height: 30px;
                 display: flex;
@@ -20,18 +33,6 @@
             padding: 13px 30px;
             border-radius: 30px;
             transition: .4s;
-            }
-                .delete{
-                position: fixed;
-               width: 32%;
-               top: 150px;
-               left: 500px;
-               margin: auto;
-               padding: 10px;
-               border-style: solid;
-               border-color: white;
-               background-color: #99987d;
-            
             } 
              </style>
     </h:head>
@@ -39,13 +40,13 @@
         <ui:include src="Admin_Page.xhtml"/>
 
         <h:form>
-                                                 <div class="Button">
+                                                                         <div class="Button">
                             <img src="library/image/home.png" height ="50" width="65"/>
                 <h:commandButton style="background-color:#acb9b9;" value="Home" id="login_button"  action="Admin_Page"></h:commandButton>
             </div>
             <div class="delete">
               <div class="text_label">
-                   <h3 class="title">Delete Books using Book Id.</h3>
+                   <h3 class="title">Delete Order using Book Id.</h3>
                       <label class="lab">Book Id.</label>
                      <h:inputText id="date" class="conntrol-textfield" value="#{delete_Class.bookid}" />
                   </div>

@@ -16,6 +16,21 @@
                  margin-left: 500px;
                 padding: 10px;
             }
+                            .Button{
+                width: 100px;
+                height: 30px;
+                display: flex;
+                margin-left:  1000px;
+                margin-top: 20px;
+                            background: #ffffff;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: .4s;
+            }
               .fields{
               margin-top: 23px;
                width: 100px;
@@ -70,7 +85,10 @@
              </div>
                      
             <h:commandButton value="Sign-Up" action="#{signUp.Insert}" class="signup-btn"></h:commandButton>
-            
+                                 <div class="Button">
+                            <img src="library/image/home.png" height ="50" width="65"/>
+                <h:commandButton style="background-color:#acb9b9;" value="Home" id="login_button"  action="index"></h:commandButton>
+            </div>
             
                    </h:form>
     </h:body>

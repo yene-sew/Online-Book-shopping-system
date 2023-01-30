@@ -22,6 +22,7 @@
              background-color: #06114F;   
              display: flex;
              flex-direction: row;
+             width: 100%;
              justify-content: center;
 
             }
@@ -57,7 +58,9 @@
             border: 2px solid transparent;
             font-weight: bold;
             padding: 13px 30px;
-            border-radius: 30px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+
             transition: .4s;
             
         }
@@ -86,12 +89,14 @@
 
             
             #left{
-                margin-left: 125px;
-                
+                margin-left: 125px;               
             }
 
             #right{
                 margin-left: 125px;
+            }
+            .anchor3{
+                border-top-left-radius: 30px;
             }
             
         </style>
@@ -114,23 +119,23 @@
                 <div class="first" id="div1">    
                                <div id="left" class="btn"> 
                                    <img src="library/image/bible.png" height ="80" width="60"/>
-    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor1"></h:commandButton>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
     <h:outputText value="BK01"/>
                                </div>
                                                    <div id="left" class="btn"> 
                                                        <img src="library/image/fkr.jpg" height ="80" width="60"/>
-    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor1"></h:commandButton>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
                            <h:outputText value="BK02"/>
                                                    </div>
                                                     <div id="left" class="btn">
-                                                        <img src="library/image/kiburdingay.jpg" height ="80" width="60"/>
-    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor1"></h:commandButton>
+                                                        <img src="library/image/javaa.jpg" height ="80" width="60"/>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
                            <h:outputText value="BK03"/>
                                                     </div>                   
 
                               <div id="right" class="btn">  
                                   <img src="library/image/alenga.jfif" height ="80" width="60"/>
-    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor2"></h:commandButton>
+    <h:commandButton value="Order" action="Available_Book.xhtml" class="anchor3"></h:commandButton>
                               <h:outputText value="BK04"/> 
                               </div>
                                                  

@@ -10,12 +10,18 @@
                 position: fixed;
                width: 31%;
                top: 150px;
-               left: 500px;
+               width: 510px;
+               left: 400px;
                margin: auto;
                border-style: solid;
                border-color: white;
                background-color: rgba(255,255,255,1);
             
+            }
+                        td{
+                margin: 20px;            
+                padding: 10px;
+                background-color: lightgray;
             }
                                       .Button{
                 width: 100px;
@@ -42,12 +48,8 @@
                 color: brown;
             }
              
-            display{
-                background-color:transparent ;
-                margin: 20px;
-                
-                padding: 10px;
-            }
+        
+         
 
         </style>
 
@@ -55,7 +57,7 @@
     <h:body>
         <ui:include src="Admin_Page.xhtml"/>
 <h:form>
-                                                             <div class="Button">
+             <div class="Button">
                             <img src="library/image/home.png" height ="50" width="65"/>
                 <h:commandButton style="background-color:#acb9b9;" value="Home" id="login_button"  action="Admin_Page"></h:commandButton>
             </div>

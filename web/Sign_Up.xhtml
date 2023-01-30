@@ -7,7 +7,7 @@
 
 
              body{
-                 background-image: Url("library/image/book7.jpg");
+                 background-color: #B0C4DE;
                  background-size: 100%;
             }
             .labels{
@@ -46,6 +46,7 @@
                 margin: 15px;
                  margin-left: 560px;
                 padding: 5px;
+                border-radius: 25px;
             }
 
        </style>  
@@ -84,7 +85,7 @@
             <h:inputSecret id="epassword" value="#{signUp.password}" class="fields"/>
              </div>
                      
-            <h:commandButton value="Sign-Up" action="#{signUp.Insert}" class="signup-btn"></h:commandButton>
+            <h:commandButton style="background-color:#ecc39d;" value="Sign-Up" action="#{signUp.Insert}" class="signup-btn"></h:commandButton>
                                  <div class="Button">
                             <img src="library/image/home.png" height ="50" width="65"/>
                 <h:commandButton style="background-color:#acb9b9;" value="Home" id="login_button"  action="index"></h:commandButton>

@@ -3,10 +3,63 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Facelet Title</title>
+        <style>
+            body{
+                 background-color: #B0C4DE;
+            } 
+            .note{
+                margin-left: 100px;
+                margin-top: 40px;
+            }
+            .link{
+                padding: 5px;
+                margin-left: 100px;
+            }
+                                        .Button{
+                width: 100px;
+                height: 30px;
+                display: flex;
+                margin-left:  1000px;
+                margin-top: 20px;
+                            background: #ffffff;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: .4s;
+            }
+        </style>
     </h:head>
     <h:body>
-        Help for every users
+        <h:form>
+            
+       
+                                         <div class="Button">
+                            <img src="library/image/home.png" height ="50" width="65"/>
+                <h:commandButton style="background-color:#acb9b9;" value="Home" id="login_button"  action="index"></h:commandButton>
+            </div>
+        <div class="note">
+        <h1 class="note">Hello Dear Customer <br></br>
+            <br></br>
+            There are 5 Tips to access this webpage properly
+          <br></br>
+          <br></br>
+          <br></br>
+         1. Fist of all you should have to create you own account!  <br></br>
+         2. Please don't forgot your "user-name and password" that was needed!!<br></br>
+         3. To order a book, click the order button under book image!!<br></br>
+         4. Also now don't forgot the Book-Id, that was under the button<br></br>
+         5. If you want to contact admin, there is an option on Home-page <br></br>
+         
+
+        
+        </h1>
+        
+</div>
+
+ </h:form>
     </h:body>
 </html>
 

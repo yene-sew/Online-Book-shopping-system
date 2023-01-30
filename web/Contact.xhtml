@@ -3,10 +3,65 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Facelet Title</title>
+        <style>
+            body{
+                 background-color: #B0C4DE;
+            } 
+            .note{
+                margin-left: 100px;
+                margin-top: 100px;
+            }
+            .link{
+                padding: 5px;
+                margin-left: 100px;
+            }
+                                        .Button{
+                width: 100px;
+                height: 30px;
+                display: flex;
+                margin-left:  1000px;
+                margin-top: 20px;
+                            background: #ffffff;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: .4s;
+            }
+   
+        </style>
     </h:head>
     <h:body>
-        Contact to addminstrator
+        <h:form>
+            
+       
+                                         <div class="Button">
+                            <img src="library/image/home.png" height ="50" width="65"/>
+                <h:commandButton style="background-color:#acb9b9;" value="Home" id="login_button"  action="index"></h:commandButton>
+            </div>
+  
+        <div class="note">
+
+        <h1 class="note">Contact<br></br>
+            <br></br>
+            If you want to communicate The Admin of System <br></br>
+         and The coder of this program, <br></br>
+         you can get the address here.  <br></br>
+         Also There are an options to get tutorials!!</h1>
+            
+        
+         <a class="link" href="https://www.youtube.com/?app=desktop"> YouTube</a>
+         <a class="link" href="https://github.com/yene-sew/Online-Book-shopping-system"> Git</a>
+         <a class="link" href="https://www.facebook.com/"> FB</a>
+         <a class="link" href="https://www.javatpoint.com/"> Java</a>
+         <a class="link" href="https://www.google.com/intl/am/gmail/about/"> E-mail</a>
+
+
+</div>
+
+ </h:form>
     </h:body>
 </html>
 

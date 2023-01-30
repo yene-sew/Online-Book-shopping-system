@@ -30,6 +30,7 @@
                 margin-top: 25px;
                display: flex;
                  margin-left: 500px;
+                 color: #faf1e3;
             }
               .fields{
               margin-top: 25px;
@@ -40,7 +41,6 @@
             }
             .order{
                 display: flex;     
-              
                 
             }
             .add{
@@ -53,6 +53,8 @@
                 width:60px;
                  margin-left: 530px;
                 padding: 10px;
+                 border-radius: 20px;
+
             }
        </style>   
     </h:head>
@@ -65,7 +67,9 @@
                             <img src="library/image/home.png" height ="50" width="65"/>
                 <h:commandButton style="background-color:#acb9b9;" value="Home" id="login_button"  action="Admin_Page"></h:commandButton>
             </div>
-               <div class="add">  
+               <div class="add"> 
+                                <h2 class="labels">INSERT-BOOK</h2>
+
              <div class="order">                
             <label class="labels">Book Name</label>
             <h:inputText id="genre" value="#{insert_Book.book}" class="fields"/>
@@ -96,7 +100,7 @@
 
              
              <div class="order">
-            <h:commandButton value="Add" action="#{insert_Book.addbook}" class="btn-buy"></h:commandButton>
+            <h:commandButton style="background-color:#ecc39d;" value="Add" action="#{insert_Book.addbook}" class="btn-buy"></h:commandButton>
             </div>
                    </div>
                    </h:form>

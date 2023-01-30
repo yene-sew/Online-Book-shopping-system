@@ -40,11 +40,12 @@
             .alldiv{
                 display: flex;
             }
-            .signup-btn{
+            .order-btn{
                  display: flex;
                 margin: 15px;
                  margin-left: 560px;
                 padding: 5px;
+                border-radius: 20px;
             }
 
        </style>  
@@ -78,7 +79,7 @@
             <h:inputSecret id="epassword" value="#{order.password}" class="fields"/>
              </div>
                      
-            <h:commandButton value="Order" action="#{order.Ordere}" class="signup-btn"></h:commandButton>
+            <h:commandButton style="background-color:#ecc39d;"  value="Order" action="#{order.Ordere}" class="order-btn"></h:commandButton>
             
             
                    </h:form>
